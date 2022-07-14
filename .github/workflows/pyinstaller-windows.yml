@@ -23,4 +23,4 @@ jobs:
         pip install pyinstaller
     - name: build with pyinstaller
       run: |
-        pyinstaller startpgoram_login.py
+        pyinstaller startprogram_login.py
