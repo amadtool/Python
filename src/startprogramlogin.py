@@ -2,7 +2,7 @@ import win32api
 import subprocess
 import win32com.client
 from pywinauto import mouse, keyboard
-from pywinauto.keyboard import send_keys
+#from pywinauto.keyboard import send_keys
 from pywinauto.application import Application
 import sys
 import os
