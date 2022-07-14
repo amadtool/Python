@@ -17,7 +17,7 @@ try:
 	win32api.Sleep(6000)
 	shell.SendKeys("ncongur@limak.com.tr")
 	shell.SendKeys("{ENTER}")
-	win32api.Sleep(3000)
+	win32api.Sleep(3500)
 	shell.SendKeys("Limak@123")
 	shell.SendKeys("{ENTER}")
 	app = Application().connect(title="Autodesk Revit 2017.2 - [Recent Files]", timeout=20)
