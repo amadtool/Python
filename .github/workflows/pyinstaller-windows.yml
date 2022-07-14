@@ -20,7 +20,8 @@ jobs:
       with:
         path: src
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3.1.0
+    - run: mkdir -p src/dist/windows
       with:
         name: name-of-artifact
         path: src/dist/windows
