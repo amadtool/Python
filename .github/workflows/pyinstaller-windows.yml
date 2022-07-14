@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - run: mkdir -p src/dist/windows
-    
+
     - name: Package Application
       uses: JackMcKew/pyinstaller-action-windows@v0.1.2
       with:
@@ -26,3 +26,12 @@ jobs:
       with:
         name: startrevit
         path: src/dist/windows
+  
+    - uses: actions/download-artifact@v3.0.0
+      with:
+        name: startrevit
+        path: src/dist/windows
+        
+    - name: Display structure of downloaded files
+      run: ls -R
+      working-directory: src/dist/windows
