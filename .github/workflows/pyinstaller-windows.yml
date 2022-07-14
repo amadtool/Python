@@ -23,5 +23,5 @@ jobs:
     - uses: actions/upload-artifact@v3.1.0
     - run: mkdir -p src/dist/windows
       with:
-        name: name-of-artifact
+        name: startrevit
         path: src/dist/windows
