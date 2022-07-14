@@ -15,13 +15,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - run: mkdir -p src/dist/windows
+    
     - name: Package Application
       uses: JackMcKew/pyinstaller-action-windows@v0.1.2
       with:
         path: src
 
-    - uses: actions/upload-artifact@v3.1.0
-    - run: mkdir -p src/dist/windows
+    - uses: actions/upload-artifact@v3.1.0    
       with:
         name: startrevit
         path: src/dist/windows
